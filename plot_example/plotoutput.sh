@@ -1,5 +1,10 @@
 #!/usr/bin/gnuplot
 
-plot "output.txt" with boxes
 
-pause -1
+set terminal push
+set terminal png
+set output "output.png"
+plot "output.txt" with boxes
+set output
+set terminal pop
+
