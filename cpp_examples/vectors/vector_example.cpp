@@ -1,6 +1,8 @@
 /*
  * vector_example.cpp
  *
+ * Compile with -std=c++11 command line option
+ *
  *  Created on: Jul 18, 2015
  *      Author: hamed
  */
