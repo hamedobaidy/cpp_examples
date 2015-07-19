@@ -14,6 +14,8 @@ class Manager: public Employee {
 public:
 	Manager();
 	virtual ~Manager();
+
+	virtual void print() const;
 };
 
 #endif /* MANAGER_H_ */

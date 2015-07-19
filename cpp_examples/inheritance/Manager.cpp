@@ -5,6 +5,8 @@
  *      Author: hamed
  */
 
+#include <iostream>
+
 #include "Manager.h"
 
 Manager::Manager() {
@@ -16,3 +18,6 @@ Manager::~Manager() {
 	// TODO Auto-generated destructor stub
 }
 
+void Manager::print() const {
+	std::cout << "Manager:" << get_name() << std::endl;
+}
