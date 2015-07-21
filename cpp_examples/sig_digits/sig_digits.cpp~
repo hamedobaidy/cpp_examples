@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	float x_f = 0.007;
+	float sin_x_f = sin(x_f);
+	float cos_x_f = cos(x_f);
+	float f_x_f = (1-sin_x_f)/cos_x_f;
+
+	cout << "using float, f(x) = " << f_x_f << endl;
+
+	double x = 0.007;
+	double sin_x = sin(x);
+	double cos_x = cos(x);
+	double f_x = (1-sin_x)/cos_x;
+
+	cout << "using double, f(x) = " << f_x << endl;
+	
+	double r_err = fabs((f_x-f_x_f)/f_x);
+
+	cout << "True relative error = " << r_err << endl;
+
+	return 0;
+}
