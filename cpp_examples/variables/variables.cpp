@@ -16,7 +16,7 @@ int main ()
   result = a - b;
 
   // print out the result:
-  cout << result;
+  cout << result << endl;
 
   // terminate the program:
   return 0;
